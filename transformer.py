@@ -2,6 +2,7 @@ import torch
 import pandas as pd
 from torch.utils.data import Dataset
 from sklearn.preprocessing import StandardScaler
+
 # Kindve basis to start off, where exactly to go from here is uncertain
 
 
@@ -30,4 +31,4 @@ class FeatureDataset(Dataset):
     def __getitem__(self, idx):
         # Required
         return self.x_train[idx], self.y_train[idx]
-    
+
