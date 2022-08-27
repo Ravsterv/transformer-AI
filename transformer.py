@@ -41,14 +41,14 @@ class FeatureDataset(Dataset):
             inplace=True
         )
 
-        self.data = file_out.iloc[0:total_rows, 4:15].values
+        self.data = file_out.iloc[0:total_rows, 4:17].values
 
-        self.target = file_out.iloc[0:total_rows, 12].values
+        self.target = file_out.iloc[0:total_rows, 17].values
 
         # Feature Scaling? Not sure what this is but lets use it for now.
         # I guess we will change it to SMOTEcross after this
 
-
+        print(self.target)
         # Convert to Torch tensors
 
     def __len__(self):
