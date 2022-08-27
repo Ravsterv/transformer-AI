@@ -3,7 +3,7 @@ import torch.nn as nn
 from net import Net
 from pytorch.ppg_feature_dataset import FeatureDataset
 
-feature_set = FeatureDataset('newHi-Modnew.csv')
+feature_set = FeatureDataset('NewHI-Modnew.csv')
 
 train_loader = torch.utils.data.DataLoader(feature_set, batch_size=10, shuffle=True)
 
